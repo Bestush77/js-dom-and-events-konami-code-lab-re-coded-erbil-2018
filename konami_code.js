@@ -1,5 +1,5 @@
 // const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-const code = [9,9,9,1]
+const code = [9,9,9,1];
 
 // function init() {
 // let index = 0;
