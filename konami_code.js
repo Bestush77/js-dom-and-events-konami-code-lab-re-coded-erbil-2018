@@ -21,37 +21,38 @@ const code = [9,9,9,1];
 //   });}
   
   
-  function init() {
-  let index = 0;
+//   function init() {
+//   let index = 0;
 
-  document.body.addEventListener('keydown', function(e) {
-    const key = parseInt(e.which || e.detail);
+//   document.body.addEventListener('keydown', function(e) {
+//     const key = parseInt(e.which || e.detail);
 
-    if (code[index] === key) {
-      index++;
+//     if (code[index] === key) {
+//       index++;
 
-      if (index === code.length) {
-        alert('Hurray!');
+//       if (index === code.length) {
+//         alert('Hurray!');
 
-        index = 0;
-      }
-    } else {
-      index = 0;
-    }
-  });
-}
+//         index = 0;
+//       }
+//     } else {
+//       index = 0;
+//     }
+//   });
+// }
 
-// function init()
-// {
-// let i = 0;
-// document.body.addeventListener("keydown", function (key){
+function init()
+{
+let i = 0;
+document.body.addeventListener("keydown", function (key){
   
-//   if(key.which === code[i]){
-//     i++;
-//   }
-//   console.log(i, "befoore 2nd if")
-//   if(i === code.length-1){
-//     alert("You did it")
-//   }
-//   console.log(i,"after second if")
-// });}
+  if(key.which === code[i]){
+    i++;
+  
+  console.log(i, "befoore 2nd if")
+  if(i === code.length){
+    alert("You did it")
+  }
+else{i=0}
+}  console.log(i,"after second if")
+});}
