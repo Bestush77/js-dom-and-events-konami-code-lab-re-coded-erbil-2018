@@ -11,7 +11,7 @@ document.body.addeventListener("keydown", function (keypressed){
   if(key === code[i]){
     i++;
   
-  console.log(i, "befoore 2nd if")
+
   if(i === code.length){
     alert("You did it")
     i = 0;
@@ -20,5 +20,5 @@ else{
   i=0
   
 }
-}  console.log(i,"after second if")
+} 
 });}
